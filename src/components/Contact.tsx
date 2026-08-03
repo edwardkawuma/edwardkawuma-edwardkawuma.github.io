@@ -15,6 +15,8 @@ export function Contact() {
   const { ref, visible } = useReveal();
   const [status, setStatus] = useState<Status>('idle');
   const [error, setError] = useState<string>('');
+  const requiredFieldsError =
+    status === 'error' && error === 'Please fill in your name, email, and message.';
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -94,6 +96,8 @@ export function Contact() {
                       name="name"
                       type="text"
                       required
+                      autoComplete="name"
+                      aria-invalid={requiredFieldsError || undefined}
                       placeholder="Your name"
                       className="input-field"
                     />
@@ -107,6 +111,8 @@ export function Contact() {
                       name="email"
                       type="email"
                       required
+                      autoComplete="email"
+                      aria-invalid={requiredFieldsError || undefined}
                       placeholder="you@example.com"
                       className="input-field"
                     />
@@ -120,6 +126,7 @@ export function Contact() {
                     id="subject"
                     name="subject"
                     type="text"
+                    autoComplete="organization-title"
                     placeholder="What's this about?"
                     className="input-field"
                   />
@@ -132,11 +139,13 @@ export function Contact() {
                     id="message"
                     name="message"
                     required
+                    aria-invalid={requiredFieldsError || undefined}
+                    aria-describedby="message-help"
                     rows={5}
                     placeholder="Tell us about your project..."
                     className="input-field resize-none"
                   />
-                  <p className="mt-1.5 text-xs text-slate-500">
+                  <p id="message-help" className="mt-1.5 text-xs text-slate-500">
                     Include project goals, timeline, and preferred contact method.
                   </p>
                 </div>

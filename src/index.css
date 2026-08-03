@@ -19,6 +19,13 @@
       radial-gradient(50rem 50rem at -10% 20%, rgba(245, 158, 11, 0.06), transparent 55%);
     background-attachment: fixed;
   }
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    @apply outline-none ring-2 ring-brand-400 ring-offset-2 ring-offset-ink-950;
+  }
   section {
     @apply relative;
   }
@@ -84,6 +91,9 @@
 }
 
 @layer utilities {
+  .tap-target {
+    @apply min-h-11 min-w-11;
+  }
   .reveal {
     opacity: 0;
   }
@@ -92,5 +102,19 @@
   }
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

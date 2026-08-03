@@ -74,7 +74,7 @@ export function Navbar() {
               key={l.href}
               href={l.href}
               aria-current={active === l.href ? 'page' : undefined}
-              className={`link-underline text-sm font-medium transition ${
+              className={`link-underline inline-flex min-h-11 items-center text-sm font-medium transition ${
                 active === l.href ? 'text-white' : 'text-slate-300 hover:text-white'
               }`}
             >
@@ -93,7 +93,7 @@ export function Navbar() {
         </div>
 
         <button
-          className="rounded-lg border border-white/10 p-2 text-slate-200 md:hidden"
+          className="tap-target rounded-lg border border-white/10 p-2 text-slate-200 md:hidden"
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
           aria-expanded={open}
@@ -111,7 +111,7 @@ export function Navbar() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className={`rounded-lg px-3 py-2.5 text-sm font-medium transition ${
+                className={`tap-target rounded-lg px-3 py-2.5 text-sm font-medium transition ${
                   active === l.href
                     ? 'bg-brand-500/15 text-white'
                     : 'text-slate-300 hover:bg-white/5 hover:text-white'

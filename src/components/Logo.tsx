@@ -41,7 +41,7 @@ export function Logo({ size = 44, variant = 'icon', className = '' }: LogoProps)
       src={logoSrc}
       alt="Auxano Tech logo"
       className={`h-auto object-contain ${className}`}
-      style={{ height: size, width: 'auto' }}
+      style={{ height: size, width: 'auto', maxWidth: size * 2.5 }}
     />
   );
 }
