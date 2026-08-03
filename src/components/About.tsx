@@ -49,7 +49,7 @@ export function About() {
             <div className="flex items-start gap-5">
               <div className="relative shrink-0">
                 <img 
-                  src="/profile.jpg" 
+                  src="/picture.jpeg" 
                   alt="Eng. Kawuma Edward" 
                   className="h-20 w-20 rounded-2xl object-cover border-2 border-brand-400/30"
                 />
