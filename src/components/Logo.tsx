@@ -11,7 +11,7 @@ export function Logo({ size = 44, variant = 'icon', className = '' }: LogoProps)
         <img
           src="/auxano.png"
           alt="Auxano Tech"
-          className="max-h-24 w-auto object-contain"
+          className="h-auto w-full max-w-[720px] object-contain"
           style={{ minHeight: Math.max(56, size * 0.9) }}
           onError={(event) => {
             event.currentTarget.style.display = 'none';
@@ -38,8 +38,8 @@ export function Logo({ size = 44, variant = 'icon', className = '' }: LogoProps)
     <img
       src="/auxano.png"
       alt="Auxano Tech logo"
-      className={`object-contain ${className}`}
-      style={{ width: size, height: size }}
+      className={`h-auto object-contain ${className}`}
+      style={{ height: size, width: 'auto' }}
     />
   );
 }

@@ -51,7 +51,7 @@ export function About() {
                 <img 
                   src="/picture.jpeg" 
                   alt="Eng. Kawuma Edward" 
-                  className="h-20 w-20 rounded-2xl object-cover border-2 border-brand-400/30"
+                  className="h-24 w-24 rounded-2xl object-cover object-[center_18%] border-2 border-brand-400/30 shadow-glow-sm"
                 />
                 <span className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-success-500 text-[10px] font-bold text-ink-950">
                   ✓

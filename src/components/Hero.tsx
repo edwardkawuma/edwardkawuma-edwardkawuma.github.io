@@ -17,7 +17,7 @@ export function Hero() {
             <Logo
               size={96}
               variant="full"
-              className="drop-shadow-[0_0_40px_rgba(245,158,11,0.25)] max-w-xs sm:max-w-sm"
+              className="drop-shadow-[0_0_40px_rgba(245,158,11,0.25)] w-full max-w-[320px] sm:max-w-[520px]"
             />
           </div>
 
