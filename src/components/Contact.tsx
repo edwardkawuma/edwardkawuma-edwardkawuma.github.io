@@ -36,6 +36,12 @@ export function Contact() {
     setStatus('loading');
     setError('');
 
+    if (!supabase) {
+      setStatus('error');
+      setError('Contact form is temporarily unavailable. Please use email or phone for now.');
+      return;
+    }
+
     try {
       const { error: insertError } = await supabase
         .from('contact_messages')

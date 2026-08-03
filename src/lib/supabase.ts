@@ -8,6 +8,9 @@ if (!url || !anonKey) {
   console.warn('Supabase env vars missing — contact form will be disabled.');
 }
 
-export const supabase = createClient(url ?? '', anonKey ?? '', {
-  auth: { persistSession: false },
-});
+export const supabase =
+  url && anonKey
+    ? createClient(url, anonKey, {
+        auth: { persistSession: false },
+      })
+    : null;
