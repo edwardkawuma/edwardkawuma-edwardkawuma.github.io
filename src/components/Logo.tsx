@@ -5,11 +5,13 @@ interface LogoProps {
 }
 
 export function Logo({ size = 44, variant = 'icon', className = '' }: LogoProps) {
+  const logoSrc = `${import.meta.env.BASE_URL}auxano.png`;
+
   if (variant === 'full') {
     return (
       <div className={`inline-flex items-center ${className}`}>
         <img
-          src="/auxano.png"
+          src={logoSrc}
           alt="Auxano Tech"
           className="h-auto w-full max-w-[720px] object-contain"
           style={{ minHeight: Math.max(56, size * 0.9) }}
@@ -25,7 +27,7 @@ export function Logo({ size = 44, variant = 'icon', className = '' }: LogoProps)
           aria-hidden="true"
         >
           <img
-            src="/auxano.png"
+            src={logoSrc}
             alt=""
             className="h-12 w-auto object-contain"
           />
@@ -36,7 +38,7 @@ export function Logo({ size = 44, variant = 'icon', className = '' }: LogoProps)
 
   return (
     <img
-      src="/auxano.png"
+      src={logoSrc}
       alt="Auxano Tech logo"
       className={`h-auto object-contain ${className}`}
       style={{ height: size, width: 'auto' }}

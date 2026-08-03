@@ -31,6 +31,7 @@ const pillars = [
 
 export function About() {
   const { ref, visible } = useReveal();
+  const profileSrc = `${import.meta.env.BASE_URL}picture.jpeg`;
 
   return (
     <section id="about" className="relative py-24 sm:py-32">
@@ -49,7 +50,7 @@ export function About() {
             <div className="flex items-start gap-5">
               <div className="relative shrink-0">
                 <img 
-                  src="/picture.jpeg" 
+                  src={profileSrc}
                   alt="Eng. Kawuma Edward" 
                   className="h-24 w-24 rounded-2xl object-cover object-[center_18%] border-2 border-brand-400/30 shadow-glow-sm"
                 />
