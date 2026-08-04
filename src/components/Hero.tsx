@@ -1,5 +1,6 @@
 import { ArrowRight, Github, Sparkles } from 'lucide-react';
 import { projects } from '@/data/projects';
+import { SITE_URL } from '@/lib/site';
 
 export function Hero() {
   return (
@@ -53,7 +54,7 @@ export function Hero() {
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href="https://edwardkawuma.github.io/"
+              href={SITE_URL}
               target="_blank"
               rel="noreferrer"
               className="btn-ghost"

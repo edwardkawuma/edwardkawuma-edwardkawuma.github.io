@@ -2,12 +2,13 @@ import { useState, type FormEvent } from 'react';
 import { Send, CheckCircle2, AlertCircle, Loader2, Mail, MapPin, Linkedin, Github, Youtube } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import { useReveal } from '@/hooks/useReveal';
+import { SITE_URL } from '@/lib/site';
 
 type Status = 'idle' | 'loading' | 'success' | 'error';
 
 const socials = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/edward-kawuma-6ba81413a', icon: Linkedin },
-  { label: 'Website', href: 'https://edwardkawuma.github.io/', icon: Github },
+  { label: 'Website', href: SITE_URL, icon: Github },
   { label: 'YouTube', href: 'https://www.youtube.com/@eddykawuma4323', icon: Youtube },
 ];
 

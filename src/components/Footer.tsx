@@ -1,5 +1,6 @@
 import { Github, Linkedin, Youtube, Heart } from 'lucide-react';
 import { Logo } from './Logo';
+import { SITE_URL } from '@/lib/site';
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -9,7 +10,7 @@ const navLinks = [
 ];
 
 const socials = [
-  { label: 'Website', href: 'https://edwardkawuma.github.io/', icon: Github },
+  { label: 'Website', href: SITE_URL, icon: Github },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/edward-kawuma-6ba81413a', icon: Linkedin },
   { label: 'YouTube', href: 'https://www.youtube.com/@eddykawuma4323', icon: Youtube },
 ];

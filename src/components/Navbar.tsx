@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Github, Menu, X } from 'lucide-react';
 import { Logo } from './Logo';
+import { SITE_URL } from '@/lib/site';
 
 const links = [
   { label: 'About', href: '#about' },
@@ -82,7 +83,7 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="https://edwardkawuma.github.io/"
+            href={SITE_URL}
             target="_blank"
             rel="noreferrer"
             className="btn-ghost !py-2 !px-4"
@@ -121,7 +122,7 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="https://edwardkawuma.github.io/"
+              href={SITE_URL}
               target="_blank"
               rel="noreferrer"
               className="btn-ghost mt-2"
