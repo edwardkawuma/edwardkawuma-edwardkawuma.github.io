@@ -7,7 +7,7 @@ type Status = 'idle' | 'loading' | 'success' | 'error';
 
 const socials = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/edward-kawuma-6ba81413a', icon: Linkedin },
-  { label: 'GitHub', href: 'https://github.com/edwardkawuma', icon: Github },
+  { label: 'Website', href: 'https://edwardkawuma.github.io/', icon: Github },
   { label: 'YouTube', href: 'https://www.youtube.com/@eddykawuma4323', icon: Youtube },
 ];
 

@@ -53,13 +53,13 @@ export function Hero() {
               <ArrowRight className="h-4 w-4" />
             </a>
             <a
-              href="https://github.com/edwardkawuma"
+              href="https://edwardkawuma.github.io/"
               target="_blank"
               rel="noreferrer"
               className="btn-ghost"
             >
               <Github className="h-4 w-4" />
-              View on GitHub
+              Visit Website
             </a>
           </div>
 

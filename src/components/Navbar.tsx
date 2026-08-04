@@ -82,13 +82,13 @@ export function Navbar() {
             </a>
           ))}
           <a
-            href="https://github.com/edwardkawuma"
+            href="https://edwardkawuma.github.io/"
             target="_blank"
             rel="noreferrer"
             className="btn-ghost !py-2 !px-4"
           >
             <Github className="h-4 w-4" />
-            GitHub
+            Website
           </a>
         </div>
 
@@ -121,13 +121,13 @@ export function Navbar() {
               </a>
             ))}
             <a
-              href="https://github.com/edwardkawuma"
+              href="https://edwardkawuma.github.io/"
               target="_blank"
               rel="noreferrer"
               className="btn-ghost mt-2"
             >
               <Github className="h-4 w-4" />
-              GitHub
+              Website
             </a>
           </div>
         </div>

@@ -9,7 +9,7 @@ const navLinks = [
 ];
 
 const socials = [
-  { label: 'GitHub', href: 'https://github.com/edwardkawuma', icon: Github },
+  { label: 'Website', href: 'https://edwardkawuma.github.io/', icon: Github },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/in/edward-kawuma-6ba81413a', icon: Linkedin },
   { label: 'YouTube', href: 'https://www.youtube.com/@eddykawuma4323', icon: Youtube },
 ];
