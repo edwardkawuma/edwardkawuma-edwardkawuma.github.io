@@ -73,7 +73,7 @@ export function Contact() {
 
         <div className="mt-12 grid gap-6 lg:grid-cols-5">
           {/* Form */}
-          <div className="glass-card p-7 lg:col-span-3">
+          <div className="soft-panel p-7 lg:col-span-3">
             {status === 'success' ? (
               <div className="flex flex-col items-center justify-center py-12 text-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-success-500/15 text-success-400">
@@ -221,7 +221,7 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="glass-card p-6">
+            <div className="soft-panel p-6">
               <h4 className="font-display text-sm font-semibold text-white mb-3">Phone</h4>
               <div className="space-y-2">
                 <a 

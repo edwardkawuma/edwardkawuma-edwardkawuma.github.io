@@ -44,9 +44,22 @@ export function About() {
           <h2 className="section-title mt-4">The architect behind the ecosystem</h2>
         </div>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-5">
+        <div className="mt-8 grid gap-3 sm:grid-cols-3">
+          {[
+            { value: '3+', label: 'Years building' },
+            { value: '15', label: 'Projects shipped' },
+            { value: '100%', label: 'Product-minded' },
+          ].map((metric) => (
+            <div key={metric.label} className="soft-panel px-4 py-4 text-center">
+              <div className="font-display text-xl font-semibold text-white">{metric.value}</div>
+              <div className="mt-1 text-sm text-slate-400">{metric.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-8 grid gap-8 lg:grid-cols-5">
           {/* Bio card */}
-          <div className="glass-card animate-fade-up p-7 lg:col-span-3">
+          <div className="soft-panel animate-fade-up p-7 lg:col-span-3">
             <div className="flex items-start gap-5">
               <div className="relative shrink-0">
                 <img 
@@ -99,7 +112,7 @@ export function About() {
               <div
                 key={p.title}
                 style={{ animationDelay: `${i * 100}ms` }}
-                className="glass-card animate-fade-up group p-5 transition hover:border-brand-400/30 hover:shadow-glow-sm"
+                className="soft-panel animate-fade-up group p-5 transition hover:-translate-y-1 hover:border-brand-400/30 hover:shadow-glow-sm"
               >
                 <div className="flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-500/15 text-brand-300 transition group-hover:bg-brand-500/25">

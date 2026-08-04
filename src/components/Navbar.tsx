@@ -60,21 +60,21 @@ export function Navbar() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass border-b border-white/10' : 'border-b border-transparent'
+        scrolled ? 'border-b border-white/10 bg-ink-950/80 backdrop-blur-2xl' : 'border-b border-transparent'
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3.5 sm:px-8">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 sm:px-8">
         <a href="#home" className="flex items-center">
           <Logo size={44} variant="icon" />
         </a>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-6 md:flex">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               aria-current={active === l.href ? 'page' : undefined}
-              className={`link-underline inline-flex min-h-11 items-center text-sm font-medium transition ${
+              className={`link-underline inline-flex min-h-11 items-center rounded-full px-3 text-sm font-medium transition ${
                 active === l.href ? 'text-white' : 'text-slate-300 hover:text-white'
               }`}
             >

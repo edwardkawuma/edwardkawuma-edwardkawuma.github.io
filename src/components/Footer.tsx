@@ -18,7 +18,7 @@ export function Footer() {
   return (
     <footer className="relative border-t border-white/10 bg-ink-950/80">
       <div className="section-shell py-14">
-        <div className="mb-10 flex flex-col items-start justify-between gap-4 rounded-2xl border border-brand-400/20 bg-brand-500/10 px-5 py-5 sm:flex-row sm:items-center">
+        <div className="mb-10 flex flex-col items-start justify-between gap-4 rounded-3xl border border-brand-400/20 bg-brand-500/10 px-5 py-5 shadow-card sm:flex-row sm:items-center">
           <p className="text-sm text-slate-200">
             Have a product idea or enterprise challenge? Let's design and ship it.
           </p>
@@ -46,7 +46,7 @@ export function Footer() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={s.label}
-                    className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-slate-300 transition hover:border-brand-400/40 hover:text-brand-300"
+                    className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-300 transition hover:-translate-y-0.5 hover:border-brand-400/40 hover:text-brand-300"
                   >
                     <Icon className="h-4 w-4" />
                   </a>

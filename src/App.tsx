@@ -9,7 +9,7 @@ import { Footer } from '@/components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-ink-950">
+    <div className="relative min-h-screen bg-ink-950">
       <a
         href="#content"
         className="sr-only z-[60] rounded-md bg-brand-500 px-4 py-2 text-sm font-semibold text-ink-950 focus:not-sr-only focus:fixed focus:left-4 focus:top-4"

@@ -128,7 +128,7 @@ export function Projects() {
           ))}
         </div>
 
-        <div className="mt-8 flex items-center justify-between rounded-2xl border border-white/10 bg-ink-900/50 px-5 py-4">
+        <div className="mt-8 flex items-center justify-between rounded-3xl border border-white/10 bg-ink-900/60 px-5 py-4 shadow-card">
           <p className="text-xs text-slate-400 sm:text-sm">
             Showing {filtered.length} of {projects.length} projects.
           </p>
